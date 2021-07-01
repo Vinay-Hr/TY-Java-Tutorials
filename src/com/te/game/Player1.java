@@ -58,7 +58,7 @@ public class Player1 {
 		}
 		else {
 			this.health= 100;
-			System.out.println(getName()+ " is headled. New health: "+ this.health);
+			System.out.println(getName()+ " is healed. New health: "+ this.health);
 		}
 		
 	}

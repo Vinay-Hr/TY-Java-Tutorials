@@ -15,7 +15,7 @@ public class MyArray implements Iterable {
 	
 	public void add(Object e) {
 		
-		if(position >= array.length) {
+		if(position >= array.length-1) {
 			increasecapacity();
 		}
 		array[position] = e;
@@ -38,12 +38,16 @@ public class MyArray implements Iterable {
 	}
 	
 	public void remove(int index) {
+		int flag = 0;
 		if(array.length>0 && index>=0 && index<array.length-1) {
 			for (int i=index; i<array.length-1; i++) {
 				array[i]=array[i+1];
+				if (array[i+1] == null) {
+					flag ++;
+				}		
 			}
-		Object [] temp = new Object[array.length-1];
-		System.arraycopy(array, 0, temp, 0, array.length-1);
+		Object [] temp = new Object[array.length-(flag+1)];
+		System.arraycopy(array, 0, temp, 0, array.length-(flag+1));
 		array=temp;
 		}
 	}

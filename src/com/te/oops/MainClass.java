@@ -11,6 +11,7 @@ public class MainClass {
 		a = new B();
 		a.m1();
 		System.out.println(a.i);
+		System.out.println("-------------");
 		
 		a = new C();
 		a.m1();

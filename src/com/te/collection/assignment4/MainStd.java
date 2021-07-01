@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class MainStd {
 
 	public static void main(String[] args) {
-		ArrayList<Student> l = new ArrayList<Student>();
-		l.add(new Student(2, "yash", 24, 58.9, 12));
-		l.add(new Student(4, "suresh", 23, 54.9, 10));
-		l.add(new Student(3, "naresh", 26, 52.9, 9));
-		l.add(new Student(1, "akhil", 25, 56.9, 8));
-		l.add(new Student(5, "jashwanth", 27, 58.9, 11));
+		ArrayList<StudentID> l = new ArrayList<StudentID>();
+		l.add(new StudentID(2, "yash", 24, 58.9, 12));
+		l.add(new StudentID(4, "suresh", 23, 54.9, 10));
+		l.add(new StudentID(3, "naresh", 26, 52.9, 9));
+		l.add(new StudentID(1, "akhil", 25, 56.9, 8));
+		l.add(new StudentID(5, "jashwanth", 27, 58.9, 11));
 		
 		for (;;) {
 			Scanner sc = new Scanner(System.in);
@@ -22,7 +22,6 @@ public class MainStd {
 			switch (a) {
 			case 1:
 				new Module().idsort(l);
-
 				break;
 			case 2: new Module().namesort(l);
 				break;

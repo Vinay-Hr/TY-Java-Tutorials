@@ -11,17 +11,15 @@ public class CarMain {
 //		System.out.println("-----------");
 //
 //		Bmw bmw = new Bmw();
-//		car.start();
-//		car.accelerate();
-//		car.brakes();
-//		car.airbags();
-//		
+//		bmw.start();
+//		bmw.accelerate();
+//		bmw.brakes();
+//		bmw.airbags();
+//		System.out.println("-----------");
 		
 		Driver driver = new Driver();
 		driver.drive(new Audi ());
-		
 		System.out.println("-------------");
-		
 		driver.drive(new Bmw ());
 	}
 
